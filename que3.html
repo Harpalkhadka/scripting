@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Circumference of a Circle</title>
+
+    <script>
+        function calculateCircumference() {
+            
+            let radius = parseFloat(prompt("Enter the radius of the circle:"));
+
+            if (isNaN(radius) || radius <= 0) {
+                alert("enter a valid positive number for radius.");
+                return;
+            }
+
+         
+            let circumference = 2 * Math.PI * radius;
+
+      
+            alert("Circumference of the circle is: " + circumference.toFixed(2));
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>Circumference Calculator</h2>
+    <button onclick="calculateCircumference()">Calculate</button>
+
+</body>
+</html>

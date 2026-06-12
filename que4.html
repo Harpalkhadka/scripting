@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Even or Odd Checker</title>
+
+    <script>
+        function checkEvenOdd() {
+        
+            let number = parseInt(prompt("Enter a number:"));
+
+            if (isNaN(number)) {
+                alert("Please enter a valid number.");
+                return;
+            }
+
+            if (number % 2 === 0) {
+                alert(number + " is an Even number.");
+            } else {
+                alert(number + " is an Odd number.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>Even or Odd Checker</h2>
+    <button onclick="checkEvenOdd()">Check Number</button>
+
+</body>
+</html>
