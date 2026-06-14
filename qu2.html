@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Largest and Smallest (For Loop)</title>
+</head>
+<body>
+
+<script>
+    let a = [2, 19, 37, 48, 45, 94, 12, 23, 78];
+
+    let smallest = a[0];
+    let largest = a[0];
+
+    for (let i = 1; i < a.length; i++) {
+        if (a[i] < smallest) {
+            smallest = a[i];
+        }
+
+        if (a[i] > largest) {
+            largest = a[i];
+        }
+    }
+
+    document.write("Array: " + a + "<br>");
+    document.write("Smallest number = " + smallest + "<br>");
+    document.write("Largest number = " + largest);
+</script>
+
+</body>
+</html>

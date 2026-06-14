@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Largest and Smallest (While Loop)</title>
+</head>
+<body>
+
+<script>
+    let a = [2, 19, 37, 48, 45, 94, 12, 23, 78];
+
+    let smallest = a[0];
+    let largest = a[0];
+
+    let i = 1;
+
+    while (i < a.length) {
+        if (a[i] < smallest) {
+            smallest = a[i];
+        }
+
+        if (a[i] > largest) {
+            largest = a[i];
+        }
+
+        i++;
+    }
+
+    document.write("Array: " + a + "<br>");
+    document.write("Smallest number = " + smallest + "<br>");
+    document.write("Largest number = " + largest);
+</script>
+
+</body>
+</html>
