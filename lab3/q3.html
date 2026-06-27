@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Text Color</title>
+
+    <style>
+        body{
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 100px;
+        }
+
+        #text{
+            font-size: 30px;
+            margin: 20px;
+        }
+
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Pick a Color to Change Text</h2>
+
+    <input type="color" id="colorPicker">
+
+    <p id="text">This is sample text.</p>
+
+    <button onclick="changeColor()">Change Color</button>
+
+    <script>
+        function changeColor() {
+            let color = document.getElementById("colorPicker").value;
+            document.getElementById("text").style.color = color;
+        }
+    </script>
+
+</body>
+</html>
+
