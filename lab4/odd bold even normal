@@ -1,0 +1,27 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Odd Bold and Even Normal</title>
+</head>
+<body>
+
+<h2>Numbers from 50 to 60</h2>
+
+<script>
+for(let i = 50; i <= 60; i++)
+{
+    if(i % 2 != 0)
+    {
+        document.write("<b>" + i + "</b><br>");
+    }
+    else
+    {
+        document.write(i + "<br>");
+    }
+}
+</script>
+
+</body>
+</html>
+```
